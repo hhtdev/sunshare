@@ -1,19 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-community',
+  templateUrl: './community.page.html',
+  styleUrls: ['./community.page.scss'],
 })
-export class HomePage {
-  //Déclaration de la page
-  page = "home"
+export class CommunityPage implements OnInit {
+
+  page = "community"
 
   constructor(
     private router: Router
-  ) {
+  ) { }
 
+  ngOnInit() {
   }
 
   navigation(param){
@@ -29,4 +30,5 @@ export class HomePage {
       this.router.navigate(['/about'])
     }
   }
+
 }

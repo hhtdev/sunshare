@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+              <div class="header_left">
+                *Logo*
+              </div>
+          </ion-col>
+          <ion-col col-4>
+            <ion-title class="header_center">
+              Mon installation
+            </ion-title>
+          </ion-col>
+          <ion-col col-4>
+            <div class="header_right">
+              John D
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <!--Laissé vide volontairement-->
+        <br>
+        <!--Laissé vide volontairement-->
+      </ion-row>
+      <ion-row>
+        <!-- NavBar-->
+        <ion-col col-2>
+          <div class="nav_home" (click)="navigation('home')" [ngClass]="{'nav_home_active': page == 'home', 'nav_home': page != 'home'}">Mon Espace</div>
+        </ion-col>
+        <ion-col col-2>
+          <div class="nav_community" (click)="navigation('community')" [ngClass]="{'nav_community_active': page == 'community', 'nav_community': page != 'community'}">Communauté</div>
+        </ion-col>
+        <ion-col col-2>
+          <div class="nav_exchange" (click)="navigation('exchange')" [ngClass]="{'nav_exchange_active': page == 'exchange', 'nav_exchange': page != 'exchange'}">Echange</div>
+        </ion-col>
+        <ion-col col-6>
+          <!--Offset volontaire, ajouter / générer des onlgets ici si besoin-->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+            <div class="container_1">
+              TEST HOME CONTAINER 1
+            </div> 
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <div class="container_2">
+            TEST HOME CONTAINER 2
+          </div> 
+        </ion-col>
+        <ion-col col-6>
+          <div class="container_3">
+            TEST HOME CONTAINER 3
+          </div> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
